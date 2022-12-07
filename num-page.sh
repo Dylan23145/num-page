@@ -1,9 +1,9 @@
 p=1
 clear
 bucle () {
-curl -s https://sms24.me/en/numbers/$numero/$p | grep 'WhatsApp' | cut -c 130-280
+curl -s https://sms24.me/en/numbers/$numero/1 | grep 'WhatsApp' | cut -c 130-280
 let p=$p+1
-if [[ $p -gt 6 ]];then
+if [[ $p -gt 200 ]];then
 	tput setaf 1;echo "Si no encontraste el code intentalo de nuevo o prueba con otro numero"
 	exit
 fi
