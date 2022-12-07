@@ -11,10 +11,6 @@ bucle
 }
 nu () {
 curl -s https://sms24.me/en/numbers/page/1 > i && cat i | grep -o '<div class="col-sm-12 col-md-6 col-lg-4"><a href="/en/numbers/[0-9]*" class="callout m-2">' | cut -c 63-74
-
-
-a=$(shuf -i 1-20 -n 1)
-curl -s https://sms24.me/en/numbers/page/$a > i && cat i | grep -o '<div class="col-sm-12 col-md-6 col-lg-4"><a href="/en/numbers/[0-9]*" class="callout m-2">' | cut -c 63-74
 }
 
 setterm --foreground green 
