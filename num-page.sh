@@ -54,4 +54,3 @@ while true; do
     esac
 done
 #si eres programador y entiendes lo que hice arriba, no me juzgues tenia pereza xddddd
-#y las otras paginas me daban fallas
